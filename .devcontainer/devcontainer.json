@@ -1,0 +1,21 @@
+{
+	// VSCodeに表示されるワークスペース名
+	"name": "node-sample",
+	// Docker buildを実行するディレクトリ。devcontainer.jsonファイルからの相対パスで設定
+	"context": "..",
+	// コンテナの内容を定義するDockerfileのパス。devcontainer.jsonファイルからの相対パスで設定
+	"dockerFile": "Dockerfile",
+	"appPort": 3000,
+	// コンテナ側のVSCodeの設定値（setting.json）を変更したい場合、設定
+	"settings": {
+		"terminal.integrated.automationShell.linux": "/bin/bash",
+	},
+	"extensions": [
+		"coenraads.bracket-pair-colorizer-2",
+		"gerane.theme-dark-dracula",
+		"oderwat.indent-rainbow",
+		"pkief.material-icon-theme",
+		"esbenp.prettier-vscode",
+		"gizak.shortcuts"
+	],
+}
